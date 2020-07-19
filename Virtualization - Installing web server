@@ -20,7 +20,20 @@ browse to the Debian ISO and choose it > start > Graphical install > choose engl
 
 hostanme "debian" > domain name empty > give root/administrative password > give name for user to create user (i am giving my name) > 
 
-password > time zone eastern > guided - use entire disk > 
+password > time zone eastern > guided - use entire disk > default ok continue > All files in one partition > continue > write the changes to disks CHANGE to yes > 
+
+continue > scan another CD? No > Debian archive mirror country > US > default - deb.debian.org > http proxy empty > default ok continue > 
+
+uncheck "Debian desktop environment" because i am installing server, uncheck "print server" ,  check "SSH server > default ok continue > change default to /dev/sda...
+
+default ok continue > complete
+
+
+- when prompt log in with your user name and password created previously
+
+
+
+
 
 
 
