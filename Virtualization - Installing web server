@@ -1,0 +1,38 @@
+# Install Virtual machine Debian 10.
+
+
+- download the virtualbox for your corresponding OS platform
+
+I am using windows, so downloading for that and installed virtualbox
+
+
+- search for "Debian download" > click network install >  from small CD or USB, choose to download amd64 version 
+
+
+- open virtualbox > click new > give name (Debian...) > ram 1gb ok > create a virtual hard disk now >  VDI > 
+
+Dynamically allocated > by default 8gb CHANGE to 12gb or you will get error > Create
+
+
+- start Debian server > click Folder sign to open > choose "Add" from optical disk window > 
+
+browse to the Debian ISO and choose it > start > Graphical install > choose english, US, American english > 
+
+hostanme "debian" > domain name empty > give root/administrative password > give name for user to create user (i am giving my name) > 
+
+password > time zone eastern > guided - use entire disk > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
