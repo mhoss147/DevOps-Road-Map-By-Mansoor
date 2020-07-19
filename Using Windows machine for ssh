@@ -1,0 +1,165 @@
+# Using Windows machine for ssh
+
+
+- in Windows search box type "poweshell" > select Run as administrator > confirm
+
+- type ssh in PowerShell window
+
+you will see
+
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+
+
+- to connect to your Linux machine, we need IP address
+
+login to your virtual machine 
+
+then type 
+
+    ip a
+
+
+you will 2 ip addresses which means our virtual machine does not have access to host network
+
+to access this virtual machine from our local machine, you need to enable something called "Bridged network" 
+
+to do that shut down the virtual machine
+
+in virtualbox click on the settings > select Network > in Attached to select "Bridged adapter" > if you are connected to ethernet choose that adapter/
+
+if connected via wifi choose that adapter
+
+Restart the VM again
+
+
+then type 
+
+    ip a
+    
+- in PowerShell or cmd find your local machine IP
+
+    ipconfig
+
+
+check ipv4 address here compare VM both ip 
+
+one the ip show the same network
+
+
+- now in windows powershell use ssh
+
+ssh username@IPaddress (ip of same network)
+
+
+if you are connecting first time, accept the fingerprint
+
+
+    yes
+
+
+give the password of that user of VM
+
+you are connected!
+
+
+
+- check by running ls in both machines
+
+
+ls
+
+
+- connecting remote server by using ssh not always good, BETTER is ssh key based authentication
+
+
+- create ssh key 
+
+
+ssh-keygen
+
+
+file will be saved in   /home/moh/.ssh/id_rsa
+
+
+if you already have a key it will be overwritten
+
+
+Overwrite (y/n)?
+
+
+Enter passphrase (empty for no passphrase):     (if somebody able to get the private key, they will not be able to use it without passphrase)
+
+
+enter
+
+key created
+
+
+
+- see the private key
+
+cat /home/moh/.ssh/id_rsa
+
+
+private key always stays in local machine, if you have access to this key you can have access to any server where this key is used for access!
+
+so you should always use a passphrase with it!
+
+
+- see the public key
+
+cat /home/moh/.ssh/id_rsa.pub
+
+
+public key is sent to the remote server
+
+
+- how to use public key based authentication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
