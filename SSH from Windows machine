@@ -116,50 +116,29 @@ public key is sent to the remote server
 
 - how to use public key based authentication
 
+ssh-copy-id username@ipAddressOfVM
 
 
+you are connected!
 
 
+- check in BOTH machines
+
+pwd
+
+ls -l
+
+ls -la
 
 
+- files inside .ssh
+
+ls -la .ssh/
 
 
+- check inside the authorized_keys
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+cat .ssh/authorized_keys
 
 
 
