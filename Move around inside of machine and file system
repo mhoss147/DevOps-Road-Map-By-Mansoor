@@ -1,0 +1,133 @@
+# Move around inside of machine and file system
+
+
+
+
+- Login your Debian server, check ip
+
+ip a
+
+
+- Start powerShell as admin; ssh to Debian machine
+
+ssh userName@IPaddress
+
+
+- print current working directory
+
+pwd
+
+
+- change directory
+
+cd
+
+- change directory to /
+
+cd /
+
+
+- change directory to HOME from any dir
+
+cd ~   (tilde)
+
+
+- change directory to previous one
+
+cd -  (hypen)
+
+
+- long listing
+
+
+ls -l
+
+
+ls -lh  (h = human readable)
+
+
+ls -a   (a = hidden files and dir which start with .)
+
+
+- sort files by time stamp
+
+
+ls -lht
+
+ls -lhtr   (r = in reverse)
+
+
+- changing dir and list of the dir you changing 
+
+
+pushd
+
+
+pushd / 
+
+pushd /home
+
+
+- all dir you pushed
+
+dirs
+
+
+- come back to previous dir
+
+popd
+
+
+- CAT a file to see inside it, but if a long file you can use LESS command and go up and down with arrow key, shift + g = end, gg = beginning of the file, 
+
+to search type /wordYouLooking, n = search down, N = search up
+
+
+
+cd /var/log
+
+ls -l
+
+cat syslog
+
+less syslog
+
+
+- first 10 lines of a file
+
+head syslog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# to login as Root user in Debian
+
+su - root
+
+password: borochelebond
+
+
+- other linux machine
+
+sudo su
+
+
+password: borochelebond
+
+
