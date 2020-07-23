@@ -80,7 +80,7 @@ popd
 
 - CAT a file to see inside it, but if a long file you can use LESS command and go up and down with arrow key, shift + g = end, gg = beginning of the file, 
 
-to search type /wordYouLooking, n = search down, N = search up
+to search type /wordYouLooking, n = search down, N = search up, q = exit
 
 
 
@@ -88,29 +88,34 @@ cd /var/log
 
 ls -l
 
-cat syslog
+cat syslog  (syslog = fileName)
 
-less syslog
+less syslog (syslog = fileName)
+
+q 
 
 
 - first 10 lines of a file
 
-head syslog
+head syslog (syslog = fileName)
 
 
 
+- last 10 lines of a file
+
+tail syslog   (syslog = fileName)
 
 
 
+- first 1 lines of a file
+
+head -n1 syslog (syslog = fileName)
 
 
 
+- last 1 lines of a file
 
-
-
-
-
-
+tail -n1 syslog   (syslog = fileName)
 
 
 
@@ -129,5 +134,12 @@ sudo su
 
 
 password: borochelebond
+
+
+- logout from root
+
+exit
+
+
 
 
