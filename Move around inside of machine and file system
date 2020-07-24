@@ -142,4 +142,12 @@ exit
 
 
 
+- (-p) switch create many folder one inside another
+
+mkdir -p f1/f2/f3/f4
+
+
+
+
+
 
