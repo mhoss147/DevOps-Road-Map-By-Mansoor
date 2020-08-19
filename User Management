@@ -1,0 +1,34 @@
+# User Management 
+
+- User id
+
+0 is reserved for root user
+
+1 - 999 for system user
+
+1000 - above is for other user
+
+
+/etc/passwd - contains username, home directory
+
+/etc/shadow - contains password hash
+
+- create user using adduser or useradd command
+
+adduser moh1
+
+password - ***
+
+fill in all the info or leave blank
+
+
+
+
+
+
+
+
+
+
+
+
