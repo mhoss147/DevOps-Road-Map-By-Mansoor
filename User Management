@@ -13,13 +13,48 @@
 
 /etc/shadow - contains password hash
 
-- create user using adduser or useradd command
+# create user using adduser or useradd command
 
 adduser moh1
 
 password - ***
 
-fill in all the info or leave blank
+fill in all other info's or leave blank
+
+
+- check user id and password
+
+grep "username" /etc/passwd
+
+grep "username" /etc/shadow
+
+
+- set the password for a user (you must be root user or it's your a/c)
+
+passwd "username"
+
+
+# create group  
+
+- check which groups user belongs
+
+groups "username"
+
+
+- add user to sudo group
+
+usermod -aG sudo "username"
+
+
+- delete a user (from root)
+
+userdel "username"
+
+
+
+
+
+
 
 
 
