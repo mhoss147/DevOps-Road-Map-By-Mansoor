@@ -50,6 +50,36 @@ usermod -aG sudo "username"
 
 userdel "username"
 
+# Linux permissions
+
+# Group permissions
+
+- owner = o
+
+- group = g
+
+- all = a
+
+- create a directory and go there
+
+mkdir permissions
+
+cd permissions
+
+ls -l
+
+it has permissions like -rw-r--r--
+
+    "-" denotes the type (file/directory/link)
+
+    "rw-" for user and permissions are read and write
+
+    "r--" for groups and permissions is read only
+
+    "r--" for others and permissions is read only
+     
+
+
 
 
 
