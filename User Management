@@ -72,11 +72,78 @@ it has permissions like -rw-r--r--
 
     "-" denotes the type (file/directory/link)
 
+    - check it
+
+    ls -ld 
+
+    now in place of "-" you see "d"
+
+
     "rw-" for user and permissions are read and write
 
     "r--" for groups and permissions is read only
 
     "r--" for others and permissions is read only
+
+# Change permissions for user
+
+    - Giving user execute permission
+
+    chmod u+x "filename"
+
+
+    - check it
+
+    ls -l "filename"
+
+
+    - Giving gruop write access
+
+    chmod g+w "filename"
+
+    - check it
+
+    ls -l "filename"
+
+
+    - Giving others execute permission on the file
+
+    chmod o+x "filename"
+
+
+# Remove a permission
+
+    - To remove a permission use chmod u/g/o-r/w/x
+
+
+    - Remove execute permission from user
+
+    chmod u-x "filename"
+
+     - Remove write permission from group
+
+    chmod g-w "filename"
+
+
+     - Remove read permission from other
+
+    chmod o-r "filename"
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
 
 
