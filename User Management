@@ -79,36 +79,36 @@ it has permissions like -rw-r--r--
     now in place of "-" you see "d"
 
 
-    "rw-" for user and permissions are read and write
+    "rw-" for USER and permissions are read and write
 
-    "r--" for groups and permissions is read only
+    "r--" for GROUPS and permissions is read only
 
-    "r--" for others and permissions is read only
+    "r--" for OTHERS and permissions is read only
 
 # Change permissions for user
 
     - Giving user execute permission
 
-    chmod u+x "filename"
+    chmod u+x "fileORdirName"
 
 
     - check it
 
-    ls -l "filename"
+    ls -l "fileORdirName"
 
 
     - Giving gruop write access
 
-    chmod g+w "filename"
+    chmod g+w "fileORdirName"
 
     - check it
 
-    ls -l "filename"
+    ls -l "fileORdirName"
 
 
     - Giving others execute permission on the file
 
-    chmod o+x "filename"
+    chmod o+x "fileORdirName"
 
 
 # Remove a permission
@@ -118,16 +118,48 @@ it has permissions like -rw-r--r--
 
     - Remove execute permission from user
 
-    chmod u-x "filename"
+    chmod u-x "fileORdirName"
 
-     - Remove write permission from group
+    - Remove write permission from group
 
-    chmod g-w "filename"
+    chmod g-w "fileORdirName"
 
 
-     - Remove read permission from other
+    - Remove read permission from other
 
-    chmod o-r "filename"
+    chmod o-r "fileORdirName"
+
+
+    - Remove read permission from ALL
+
+    chmod a-r "fileORdirName"
+
+
+# Permission using Octal mode  
+    
+    "r" = 4
+
+    "w" = 2
+
+    "x" = 1
+
+    - chmod 777 "fileORdirName" means permission of user - 7, group - 7, other - 7 
+
+    "7" = r + w + x (4 + 2 + 1)
+
+    "6" = r + w (4 + 2)
+
+    "5" = r + x (4 + 1)
+
+    ...
+
+
+    
+
+
+
+
+
 
     
 
