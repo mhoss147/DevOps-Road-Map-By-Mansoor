@@ -151,10 +151,39 @@ it has permissions like -rw-r--r--
 
     "5" = r + x (4 + 1)
 
+    "0" = - (no permission)
+
     ...
 
 
-    
+
+# Changing ownership of a file
+
+    - you can not change the ownership of a file even if you are the owner
+    only Root can do this!
+
+
+    - To change the ownership of a file, go the directory
+
+    cd dirName
+
+    - use sudo
+
+    sudo chown moh:moh "fileORdirName"  
+
+    (where moh is the fileName and dirName)
+
+    - If you are using same USER & GROUP name, use (.) like
+
+    sudo chown moh. "fileORdirName"  
+
+
+
+
+
+
+
+
 
 
 
