@@ -1,0 +1,53 @@
+# What is a package?
+
+    - It is a way of distributing applications; it may contains
+    binaries, configuration files, documents; basically an application
+    packaged into one file.
+
+
+    - Redhat use .rpm and Debian uses .deb package  
+
+    - When we install package it is coming from - /etc/apt/sources.list
+
+    cat /etc/apt/sources.list
+
+ # Install a steam locomotive (animation)
+
+    
+    - Create a Folder named packages
+
+    mkdir packages
+
+    cd packages
+
+    - Downloading SL package for debian
+
+    wget http://ftp.us.debian.org/debian/pool/main/s/sl/sl_3.03-17_amd64.deb
+
+    - Install that package using tool- dpkg
+
+    sudo dpkg -i sl_3.03-17_amd64.deb (packageName)
+
+    - Check It
+
+    sl
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
