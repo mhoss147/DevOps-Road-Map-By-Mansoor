@@ -32,8 +32,58 @@
 
     sl
 
+    - Show all the package installed 
+
+    sudo dpkg -l
+
+
+    - Filter out with grep
+
+    sudo dpkg -l | grep sl
+    
+
+    - Filter out with grep + word with sl
+
+    sudo dpkg -l | grep -w sl
+
+
+ # Install a steam locomotive (animation) using apt
+
+    - First of all run update to resynchronize
+
+    sudo apt-get update
+
+
+    - Install the package (without http)
+
+    sudo apt-get install sl
+
+
+    - Check It
+
+    sl
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
