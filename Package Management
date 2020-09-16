@@ -63,6 +63,43 @@
 
     sl
 
+# Remove a package
+
+   - Remove a package using 'remove or purge'
+
+   sudo apt-get remove (remove everything except config files)
+
+   sudo apt-get purge (remove everything)
+    
+    
+    
+    - Install nginx 
+    // nginx is a web server, runs as a service 
+    // nginx can only run as static web server (by default)
+
+    sudo apt-get install nginx
+
+    - Remove nginx
+
+    sudo apt-get remove nginx
+
+
+    - Check if removed everything? No
+
+   sudo dpkg -l | grep nginx
+
+
+   - To get rid og them 
+
+   sudo apt-get autoremove
+
+   
+
+
+
+
+
+
     
 
 
