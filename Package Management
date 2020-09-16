@@ -93,6 +93,15 @@
 
    sudo apt-get autoremove
 
+   // Static web server can be a blog (html, css, js), all will see same, browser handle the code/logic
+
+   // Dynamic web server can be of any complexity, functions like login, comments, complicated to hostname, have serverside connected
+
+
+   // Service is a software that provides a 'service' and 'listens' for requests 
+
+   // If a service runs in the background it is called 'Daemon'
+   
    
 
 
