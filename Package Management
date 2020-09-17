@@ -121,8 +121,23 @@
 
    sudo systemctl --type=service --state=running
    // see nginx is running...
-   
+
    // nginx.service                   loaded active running A high performance web server and a reverse proxy server
+
+   - Format of using systemctl
+
+   sudo systemctl start "serviceName" / sudo systemctl start nginx
+
+   sudo systemctl stop "serviceName" / sudo systemctl stop nginx
+
+   sudo systemctl status "serviceName" / sudo systemctl status nginx
+
+   sudo systemctl enable "serviceName"
+
+   sudo systemctl disable "serviceName"
+
+
+
 
 
 
