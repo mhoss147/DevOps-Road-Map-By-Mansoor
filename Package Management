@@ -101,7 +101,39 @@
    // Service is a software that provides a 'service' and 'listens' for requests 
 
    // If a service runs in the background it is called 'Daemon'
+
+   // Not all services are 'Daemon' and not all Daemon are 'services'
+
+# Manage nginx server using systemctl
    
+   // systemctl - Control the systemd system and service manager
+
+   - Install nginx
+
+   sudo apt-get install nginx
+
+   - See services system started/stopped
+
+   sudo systemctl --type=service
+
+
+   - See services running
+
+   sudo systemctl --type=service --state=running
+   // see nginx is running...
+   
+   // nginx.service                   loaded active running A high performance web server and a reverse proxy server
+
+
+
+
+
+
+
+
+   
+
+
    
 
 
