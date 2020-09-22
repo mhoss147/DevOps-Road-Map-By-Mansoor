@@ -149,6 +149,17 @@
 
 // you will see nginx: master process /usr/sbin/nginx -g daemon on; master_process on
 
+   - Kill a process
+
+   sudo kill 1269 (1269 is the PID - processID)
+
+   or
+//using the -9 switch ensures that the process is effectively killed. Even though a frozen or unresponsive process may not respond to a simple TERM signal, it will die when sent a KILL signal.
+
+   sudo kill -9 1269 (1269 is the PID - processID)
+
+
+
 
 
 
