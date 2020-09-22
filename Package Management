@@ -112,19 +112,17 @@
 
    sudo apt-get install nginx
 
-   - See services system started/stopped
+   - See name of the services system started/stopped
 
    sudo systemctl --type=service
 
 
-   - See services running
-
-   sudo systemctl --type=service --state=running
+   - See the name of the services running
    // see nginx is running...
 
-   // nginx.service                   loaded active running A high performance web server and a reverse proxy server
+   sudo systemctl --type=service --state=running
 
-   - Format of using systemctl
+   - Start/stop... service using systemctl
 
    sudo systemctl start "serviceName" / sudo systemctl start nginx
 
@@ -135,6 +133,32 @@
    sudo systemctl enable "serviceName"
 
    sudo systemctl disable "serviceName"
+
+
+# Checking if our web server is working
+
+   - See all the running processes
+
+   ps aux
+
+   // VSZ = virtual memory, RSS = actual memory
+
+   - Find the specific process is running ot Not
+
+   ps aux | grep nginx (nginx is the serviceName)
+
+// you will see nginx: master process /usr/sbin/nginx -g daemon on; master_process on
+
+
+
+
+
+
+
+
+
+
+
 
 
 
