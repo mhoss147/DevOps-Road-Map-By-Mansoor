@@ -218,7 +218,39 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
    // Comment out this line # listen [::]:80...
    // And edit listen 80... to listen 127.0.0.1:80...
    // Save and exit
+
+   - Check if there is any syntax error in the configuration file we just changed
+
+   sudo nginx -t
+
+   // No error
+   nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+   nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+
+   - Restart nginx server
+    
+    sudo systemctl restart nginx
+
+    netstat -tulnp
+
+   // you will see nginx is only listening to is
+   // tcp        0      0 127.0.0.1:80            0.0.0.0:*               LISTEN      -    
+
+   // You can change the configuration file to previous status and run
+
+   sudo systemctl restart nginx
+
+   netstat -tulnp
+
    
+
+
+
+
+
+
+
 
 
 
