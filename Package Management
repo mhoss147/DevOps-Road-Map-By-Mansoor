@@ -177,9 +177,57 @@
 
    - Most important netstat switch 't,u,l,n,p'
    // Research what they do
-   // 'tulnp' shows services listening for requests in the system
+   // 'tulnp' shows services listening for requests in the system/server
 
+   - Install 'net-tools' for netstat
+
+   sudo apt-get install net-tools
+
+   netstat -tulnp
+
+   // To see PID/program name, use sudo
+
+   sudo netstat -tulnp
+
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      621/sshd            
+tcp        0      0 0.0.0.0:31297           0.0.0.0:*               LISTEN      925/node            
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      708/nginx: master p 
+tcp6       0      0 :::22                   :::*                    LISTEN      621/sshd            
+tcp6       0      0 ::1:3350                :::*                    LISTEN      476/xrdp-sesman     
+tcp6       0      0 :::3389                 :::*                    LISTEN      533/xrdp            
+tcp6       0      0 :::80                   :::*                    LISTEN      708/nginx: master p 
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           352/dhclient        
+udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                396/dhclient 
+
+   // 0.0.0.0 means all network interfaces
+
+   $ ip a
+
+   // we see network interfaces
+   link/loopback  127.0.0.1/8 
+   link/ether 172.31.34.0/20 which is bridged from my computer
+
+   - Let's edit the nginx default configuration
+
+   sudo vim /etc/nginx/sites-enabled/default  (/etc/... is the default location)
+
+   sudo vim /etc/nginx/sites-enabled/default
+   // Comment out this line # listen [::]:80...
+   // And edit listen 80... to listen 127.0.0.1:80...
+   // Save and exit
    
+
+
+
+
+
+
+
+
+
 
 
 
