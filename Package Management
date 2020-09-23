@@ -158,6 +158,32 @@
 
    sudo kill -9 1269 (1269 is the PID - processID)
 
+   // Kill command sends signalName 'SIGTERM' and signalNumber '15'
+   // Kill sends Software termination signal
+
+
+   -  // Netstat, derived from the words network and statistics — 
+      // is a program that's controlled via commands issued in the
+      // command line. It delivers basic statistics on all network 
+      // activities and informs users on which portsand addresses 
+      // the corresponding connections (TCP, UDP) are running and which ports are open for tasks.
+
+
+# If you dont know a package name then search this way...
+
+   - I am looking for 'netstat', so search
+
+   sudo apt-cache search netstat
+
+   - Most important netstat switch 't,u,l,n,p'
+   // Research what they do
+   // 'tulnp' shows services listening for requests in the system
+
+   
+
+
+
+
 
 
 
