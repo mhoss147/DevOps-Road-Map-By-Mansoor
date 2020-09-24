@@ -275,7 +275,7 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
 
    sudo systemctl restart nginx
 
-# Troubleshooting a nginx server, why not running...
+# Troubleshooting a nginx/ web server, why not running...
 
    - 1. Check it's public ip working or network
 
@@ -312,6 +312,7 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
 
 # If you want to force quit “kill” a running command, you can use “Ctrl + c”.
 # If you want to force quit “kill” a running command, you can use “Ctrl + z”.
+
 
 
 
