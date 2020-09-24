@@ -311,6 +311,7 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
 
 
 # If you want to force quit “kill” a running command, you can use “Ctrl + c”.
+# If you want to force quit “kill” a running command, you can use “Ctrl + z”.
 
 
 
