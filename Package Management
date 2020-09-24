@@ -275,8 +275,54 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
 
    sudo systemctl restart nginx
 
+# Troubleshooting a nginx server, why not running...
 
-   
+   - 1. Check it's public ip working or network
+
+   nc -zv 172.31.44.167 80      (172...=public ip, 80=portNumber)
+
+   nc: connect to 172.31.44.167 port 80 (tcp) failed: Connection refused
+// If you get message like above means,
+// there is no firewall issue, nothing is listening to port 80 for the ip 172...
+
+
+   - 2. Check if the process is running
+
+   ps aux| grep nginx
+
+   root      3541  0.0  0.0 124972  1432 ?        Ss   02:18   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+// means it is running
+
+
+   - 3. Use netstat and see what is listening to port 80
+
+   sudo netstat -tulnp
+
+   tcp        0      0 127.0.0.1:80            0.0.0.0:*               LISTEN      3541/nginx -g daemo
+// Only ip 127... is listening to port 80
+
+ - Let's edit the nginx default configuration
+
+   sudo vim /etc/nginx/sites-enabled/default  (/etc/... is the default configuration location)
+
+// Edit the server {
+   listen 127.0.0.1:80 default_server; > listen 80 default_server;
+}
+
+
+# If you want to force quit “kill” a running command, you can use “Ctrl + c”.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
