@@ -243,6 +243,56 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
 
    netstat -tulnp
 
+    
+    - Use of netcat are many, the most use of netcat is to see if a port is open or not
+
+    nc -zv www.google.com 80     (google=website address, 80 = port)
+
+    ip a
+
+    inet 127.0.0.1/8 scope host lo
+
+    netinet 172.31.44.167/20 brd 172.31.47.255 scope global ens5
+
+   nc -zv 127.0.0.1 80
+
+   nc -zv 172.31.44.167 80
+   
+   // If Nginx service is not running than above ports may be not listening
+   // Install and start nginx, and run netcat commands
+
+   - Let's edit the nginx default configuration
+
+   sudo vim /etc/nginx/sites-enabled/default  (/etc/... is the default configuration location)
+
+// Edit the server {
+   listen 80 default_server;  > listen 127.0.0.1:80 default_server;
+}
+
+# Press ctl + r to go in Reverse-search mode, and start typing one one the key word of previous command...
+
+   ctr + r restart
+
+   sudo systemctl restart nginx
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 
 
