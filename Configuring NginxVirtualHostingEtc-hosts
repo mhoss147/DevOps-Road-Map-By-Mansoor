@@ -1,0 +1,17 @@
+# Configuring Nginx, VirtualHosting, /etc/hosts
+
+
+    - Check the nginx server 
+
+    sudo nginx -t
+
+
+    - Find nginx server configuration file
+
+    ls -l /etc/nginx
+
+    - Let's open it
+
+    sudo vim /etc/nginx/nginx.conf 
+
+
