@@ -320,7 +320,22 @@ udp6       0      0 fe80::8e1:b9ff:feca:546 :::*                                
 
    curl 127.0.0.1      (127...=websites public ip)
 
+   curl -v 127.0.0.1    (v=verbose, using or expressed in more words than are needed, 127...=websites public ip)
+
+   curl -v -o /dev/null 127.0.0.1    ('o' means write the output in to a file, here we writing to /dev/null, 127...=websites public ip)
+
+   curl -v -s -o /dev/null 127.0.0.1   (more shorter display, 127...=websites public ip)
+
+   curl -vso /dev/null 127.0.0.1       (All switch together)
+
+
    
+
+
+
+
+
+
 
 
 
