@@ -1,4 +1,7 @@
+# Video # 12
 # Configuring Nginx, VirtualHosting, /etc/hosts
+
+// If you install nginx in LA-cloud, then use the whatever public ip of that LA-server
 
 
     - Check the nginx server 
@@ -13,5 +16,53 @@
     - Let's open it
 
     sudo vim /etc/nginx/nginx.conf 
+    // From here, lets look at a file called nginx.pid
+
+    cat /run/nginx.pid
+    // note the process number
+
+    ps aux | grep ngi
+    // Compare the process number here, same right?
+
+    - look at this file /etc/nginx...
+
+    sudo ls -l /etc/nginx/sites-enabled/
+    total 0
+    lrwxrwxrwx 1 root root 34 Sep 14 21:04 default -> /etc/nginx/sites-available/default
+
+#
+// Whenever we have to deal with configuration file, 
+//we have to deal with this file /etc/nginx/sites-enabled/default
+// Lets check this file 
+
+    sudo vim /etc/nginx/sites-enabled/default
+
+    // Server block is website specific block 
+    // Every website hosted by nginx there should be a server block
+    // listen 80 default_server = if nginx could not find any website default
+    somebody is looking, it will fall into this default_server
+
+    root /var/www/html; = this is where out website lives
+// Go to above file, edit it 
+
+    cd /var/www/html
+
+    - CHeck the file inside, and permissions
+
+    ls -l
+-rw-r--r-- 1 root root 21 Sep 26 21:00 index.nginx-debian.html
+// If it does not have full permissions change into
+-rwxr--r-- 1 root root 21 Sep 26 21:00 index.nginx-debian.html
+
+
+
+
+
+
+
+
+
+
+
 
 
